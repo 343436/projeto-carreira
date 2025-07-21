@@ -1,0 +1,125 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tema base */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0d0d1a;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+.site-header {
+  background: linear-gradient(to right, #1a1a2e, #0f3460);
+  padding: 20px 0;
+  border-bottom: 3px solid #7f00ff;
+}
+
+.container-header {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Menu */
+.menu-principal ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-principal ul li {
+  margin-left: 20px;
+}
+
+.menu-principal a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu-principal a:hover {
+  color: #7f00ff;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Títulos */
+h1, h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+/* Listas */
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #1a1a2e;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid #7f00ff;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* Ícones */
+.fas {
+  margin-right: 6px;
+  color: #7f00ff;
+}
+
+/* Animação de fade-in */
+.fade-in {
+  animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-principal ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-principal ul li {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto Carreira - Início</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container-header">
+    <h1 class="logo">Projeto Carreira</h1>
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="{{ url_for('jornada') }}"><i class="fas fa-road"></i> Jornada</a></li>
+        <li><a href="{{ url_for('faculdades') }}"><i class="fas fa-university"></i> Faculdades</a></li>
+        <li><a href="{{ url_for('idiomas') }}"><i class="fas fa-language"></i> Idiomas</a></li>
+        <li><a href="{{ url_for('cargos') }}"><i class="fas fa-briefcase"></i> Cargos</a></li>
+        <li><a href="{{ url_for('projetos') }}"><i class="fas fa-code"></i> Projetos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="fade-in">
+  <h2>Bem-vindo ao Projeto Carreira</h2>
+  <p>Este site foi criado com o objetivo de organizar e compartilhar minha jornada na área da tecnologia, especialmente na Engenharia de Software. Aqui, você encontrará informações sobre minha formação, planos futuros, habilidades linguísticas, metas profissionais e projetos que desenvolvo com base nas linguagens de programação que estou estudando.</p>
+
+  <h3>Sobre mim</h3>
+  <p>Me chamo José Abraão Salvino da Silva, sou natural de Jari-RS e atualmente curso Técnico em Informática no Senac Santa Maria-RS. Desde cedo sou apaixonado por tecnologia e programação. Meu objetivo é ingressar na faculdade de Engenharia de Software, trabalhar com desenvolvimento de sistemas e continuar aprendendo e evoluindo constantemente.</p>
+
+  <h3>O que você encontrará neste site?</h3>
+  <ul>
+    <li><strong>Jornada:</strong> Minha trajetória educacional e profissional até agora.</li>
+    <li><strong>Faculdades:</strong> Informações sobre opções de instituições de ensino próximas e EAD.</li>
+    <li><strong>Idiomas:</strong> Os idiomas que estou aprendendo para ampliar meu alcance profissional.</li>
+    <li><strong>Cargos:</strong> Caminho típico de evolução profissional (Júnior → Pleno → Sênior).</li>
+    <li><strong>Projetos:</strong> Aplicações e sistemas desenvolvidos usando Python, Java, HTML, etc.</li>
+  </ul>
+
+  <h3>Tecnologias utilizadas neste site</h3>
+  <ul>
+    <li>Python com Flask</li>
+    <li>HTML, CSS e JavaScript</li>
+    <li>Java e C++ (em projetos)</li>
+    <li>Design responsivo e animações modernas</li>
+  </ul>
+</main>
+
+<footer>
+  <p>&copy; 2025 Projeto Carreira - José Abraão Salvino Da Silva</p>
+</footer>
+
+</body>
+</html>
